@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleksii Naboichenko. All rights reserved.
 //
 
-import Foundation
-
 public extension Float {
     
     ///Generate random float between 0 and 1

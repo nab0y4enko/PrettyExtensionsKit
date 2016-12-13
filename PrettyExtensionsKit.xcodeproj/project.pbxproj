@@ -20,6 +20,7 @@
 		1B1FC3521DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3511DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift */; };
 		1B1FC3541DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */; };
 		1B1FC3561DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */; };
+		1B245ABE1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */; };
 		1BE6DECE1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */; };
 		1BE6DED01DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		1B1FC3511DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableClosedRange+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */,
 				1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */,
 				1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */,
+				1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */,
 			);
 			path = PrettyExtensionsKit;
 			sourceTree = "<group>";
@@ -192,7 +195,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Oleksii Naboichenko";
 				TargetAttributes = {
 					1B1FC3261DFC830E0032B46F = {
@@ -255,6 +258,7 @@
 				1BE6DECE1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift in Sources */,
 				1B1FC3331DFC835F0032B46F /* UIControl+PrettyExtensionsKit.swift in Sources */,
 				1B1FC3561DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */,
+				1B245ABE1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift in Sources */,
 				1B1FC3541DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift in Sources */,
 				1B1FC3521DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift in Sources */,
 			);
@@ -317,6 +321,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -340,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -370,6 +375,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -387,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

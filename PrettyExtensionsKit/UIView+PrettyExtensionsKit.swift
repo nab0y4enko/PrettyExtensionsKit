@@ -6,7 +6,7 @@
 //  Copyright © 2016 Oleksii Naboichenko. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UIView {
     

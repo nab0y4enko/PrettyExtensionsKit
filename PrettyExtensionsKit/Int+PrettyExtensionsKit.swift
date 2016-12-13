@@ -6,11 +6,9 @@
 //  Copyright © 2016 Oleksii Naboichenko. All rights reserved.
 //
 
-import Foundation
-
 public extension Int {
     
-    public static func random(_ range: ClosedRange<Int> ) -> Int {
+    public static func random(_ range: ClosedRange<Int> = 0...Int.max) -> Int {
         let negativeOffset = range.lowerBound < 0 ? abs(range.lowerBound) : 0
         
         let positiveLowerBound = UInt32(range.lowerBound + negativeOffset)

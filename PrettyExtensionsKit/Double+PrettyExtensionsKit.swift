@@ -6,15 +6,13 @@
 //  Copyright © 2016 Oleksii Naboichenko. All rights reserved.
 //
 
-import Foundation
-
 public extension Double {
     
     ///Generate random double between 0 and 1
-    public static func random() -> Float {
+    public static func random() -> Double {
         let upperBound = UInt32.max
-        let doubleUpperBound = Float(upperBound)
-        let doubleRandom = Float(arc4random_uniform(upperBound))
+        let doubleUpperBound = Double(upperBound)
+        let doubleRandom = Double(arc4random_uniform(upperBound))
         return doubleRandom / doubleUpperBound
     }
 }

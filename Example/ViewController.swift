@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print((-300...200).random)
+        print((-300...200).randomInt)
+        print(Double.random())
     }
 
     override func didReceiveMemoryWarning() {
