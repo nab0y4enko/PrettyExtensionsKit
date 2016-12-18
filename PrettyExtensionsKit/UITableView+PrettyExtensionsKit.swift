@@ -9,8 +9,7 @@
 import CoreGraphics
 
 public extension UITableView {
-    
-    
+
     func indexPathForCell(whichContains view: UIView?) -> IndexPath? {
         let convertedOriginPoint = convert(CGPoint(), from: view)
         return indexPathForRow(at: convertedOriginPoint)

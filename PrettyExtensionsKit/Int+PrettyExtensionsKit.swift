@@ -7,13 +7,21 @@
 //
 
 public extension Int {
+
+    public static func random(_ range: Range<Int>) -> Int {
+        let boundRange: Range<Int> = Int(Int32.min)..<Int(Int32.max)
+        let boundedRange = range.clamped(to: boundRange)
+        
+        let lowerBound = boundedRange.lowerBound
+        let upperBound = boundedRange.upperBound
+
+        return Int(arc4random_uniform(UInt32(upperBound - lowerBound))) + lowerBound
+    }
     
-    public static func random(_ range: ClosedRange<Int> = 0...Int.max) -> Int {
-        let negativeOffset = range.lowerBound < 0 ? abs(range.lowerBound) : 0
+    public static func random(_ range: ClosedRange<Int>) -> Int {
+        let lowerBound = range.lowerBound
+        let upperBound = range.upperBound + 1
         
-        let positiveLowerBound = UInt32(range.lowerBound + negativeOffset)
-        let positiveUpperBound = UInt32(range.upperBound + negativeOffset)
-        
-        return Int(positiveLowerBound + arc4random_uniform(positiveUpperBound - positiveLowerBound)) - negativeOffset
+        return random(lowerBound..<upperBound)
     }
 }

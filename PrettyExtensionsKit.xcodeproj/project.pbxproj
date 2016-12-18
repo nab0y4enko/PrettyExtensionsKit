@@ -21,6 +21,8 @@
 		1B1FC3541DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */; };
 		1B1FC3561DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */; };
 		1B245ABE1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */; };
+		1B75F4BA1E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75F4B91E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift */; };
+		1B75F4BE1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75F4BD1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift */; };
 		1BE6DECE1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */; };
 		1BE6DED01DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,9 @@
 		1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableClosedRange+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B75F4B81E05A56500DC020A /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
+		1B75F4B91E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B75F4BD1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,8 +123,10 @@
 				1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */,
 				1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */,
 				1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */,
+				1B75F4B91E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift */,
 				1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */,
 				1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */,
+				1B75F4BD1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift */,
 			);
 			path = PrettyExtensionsKit;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 		1B1FC3391DFC845D0032B46F /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				1B75F4B81E05A56500DC020A /* Example.playground */,
 				1B1FC33A1DFC845D0032B46F /* AppDelegate.swift */,
 				1B1FC33C1DFC845D0032B46F /* ViewController.swift */,
 				1B1FC33E1DFC845D0032B46F /* Main.storyboard */,
@@ -253,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B75F4BA1E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift in Sources */,
 				1BE6DED01DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift in Sources */,
+				1B75F4BE1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift in Sources */,
 				1B1FC34B1DFC87850032B46F /* UIView+PrettyExtensionsKit.swift in Sources */,
 				1BE6DECE1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift in Sources */,
 				1B1FC3331DFC835F0032B46F /* UIControl+PrettyExtensionsKit.swift in Sources */,

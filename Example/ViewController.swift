@@ -10,12 +10,14 @@ import UIKit
 import PrettyExtensionsKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - Fuck -
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print((-300...200).randomInt)
-        print(Double.random())
+
+//        Int32.random((Int32.min)..<Int32.max)
+//
+//        Int.random(0...1)
     }
 
     override func didReceiveMemoryWarning() {
