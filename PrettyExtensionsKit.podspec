@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
     s.source          = { :git => "https://github.com/nab0y4enko/PrettyExtensionsKit.git", :tag => "#{s.version}" }
 
-    s.source_files    = "PrettyExtensionsKit/*.swift"
+    s.source_files    = "Sources/**/*.swift"
 
     s.frameworks      = "Foundation", "UIKit", "CoreGraphics"
 
