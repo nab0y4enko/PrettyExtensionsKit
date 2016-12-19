@@ -6,8 +6,6 @@
 //  Copyright © 2016 Oleksii Naboichenko. All rights reserved.
 //
 
-import CoreGraphics
-
 public extension CountableClosedRange {
     
     public var randomInt: Int? {

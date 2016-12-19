@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B1FC32C1DFC830E0032B46F /* PrettyExtensionsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1FC32A1DFC830E0032B46F /* PrettyExtensionsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B1FC3331DFC835F0032B46F /* UIControl+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3321DFC835F0032B46F /* UIControl+PrettyExtensionsKit.swift */; };
 		1B1FC33B1DFC845D0032B46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC33A1DFC845D0032B46F /* AppDelegate.swift */; };
 		1B1FC33D1DFC845D0032B46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC33C1DFC845D0032B46F /* ViewController.swift */; };
 		1B1FC3401DFC845D0032B46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1FC33E1DFC845D0032B46F /* Main.storyboard */; };
 		1B1FC3421DFC845D0032B46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1FC3411DFC845D0032B46F /* Assets.xcassets */; };
 		1B1FC3451DFC845D0032B46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1FC3431DFC845D0032B46F /* LaunchScreen.storyboard */; };
-		1B1FC34B1DFC87850032B46F /* UIView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC34A1DFC87850032B46F /* UIView+PrettyExtensionsKit.swift */; };
 		1B1FC34C1DFC89750032B46F /* PrettyExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */; };
 		1B1FC34D1DFC89750032B46F /* PrettyExtensionsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1B1FC3521DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3511DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift */; };
-		1B1FC3541DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */; };
-		1B1FC3561DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */; };
-		1B245ABE1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */; };
-		1B75F4BA1E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75F4B91E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift */; };
-		1B75F4BE1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B75F4BD1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift */; };
-		1BE6DECE1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */; };
-		1BE6DED01DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */; };
+		1B27D0911E07F4B1008EA305 /* CGFloat+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0851E07F4B1008EA305 /* CGFloat+PrettyExtensionsKit.swift */; };
+		1B27D0921E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0861E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift */; };
+		1B27D0931E07F4B1008EA305 /* Double+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0871E07F4B1008EA305 /* Double+PrettyExtensionsKit.swift */; };
+		1B27D0941E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0881E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift */; };
+		1B27D0961E07F4B1008EA305 /* Int+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08A1E07F4B1008EA305 /* Int+PrettyExtensionsKit.swift */; };
+		1B27D0971E07F4B1008EA305 /* PrettyExtensionsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B27D08B1E07F4B1008EA305 /* PrettyExtensionsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B27D0981E07F4B1008EA305 /* Sequence+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08C1E07F4B1008EA305 /* Sequence+PrettyExtensionsKit.swift */; };
+		1B27D0991E07F4B1008EA305 /* UIColor+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08D1E07F4B1008EA305 /* UIColor+PrettyExtensionsKit.swift */; };
+		1B27D09A1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08E1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift */; };
+		1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */; };
+		1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,6 @@
 
 /* Begin PBXFileReference section */
 		1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrettyExtensionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B1FC32A1DFC830E0032B46F /* PrettyExtensionsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrettyExtensionsKit.h; sourceTree = "<group>"; };
-		1B1FC32B1DFC830E0032B46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B1FC3321DFC835F0032B46F /* UIControl+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B1FC3381DFC845D0032B46F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1FC33A1DFC845D0032B46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B1FC33C1DFC845D0032B46F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,16 +60,19 @@
 		1B1FC3411DFC845D0032B46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1FC3441DFC845D0032B46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B1FC3461DFC845D0032B46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B1FC34A1DFC87850032B46F /* UIView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
-		1B1FC3511DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
-		1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
-		1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableClosedRange+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
-		1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D0851E07F4B1008EA305 /* CGFloat+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D0861E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableClosedRange+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D0871E07F4B1008EA305 /* Double+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D0881E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D0891E07F4B1008EA305 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B27D08A1E07F4B1008EA305 /* Int+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D08B1E07F4B1008EA305 /* PrettyExtensionsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyExtensionsKit.h; sourceTree = "<group>"; };
+		1B27D08C1E07F4B1008EA305 /* Sequence+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sequence+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D08D1E07F4B1008EA305 /* UIColor+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D08E1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B75F4B81E05A56500DC020A /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
-		1B75F4B91E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
-		1B75F4BD1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
-		1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
-		1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		1B1FC31D1DFC830E0032B46F = {
 			isa = PBXGroup;
 			children = (
-				1B1FC3291DFC830E0032B46F /* PrettyExtensionsKit */,
+				1B27D0841E07F4B1008EA305 /* Sources */,
 				1B1FC3391DFC845D0032B46F /* Example */,
 				1B1FC3281DFC830E0032B46F /* Products */,
 			);
@@ -110,25 +110,6 @@
 				1B1FC3381DFC845D0032B46F /* Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1B1FC3291DFC830E0032B46F /* PrettyExtensionsKit */ = {
-			isa = PBXGroup;
-			children = (
-				1B1FC32A1DFC830E0032B46F /* PrettyExtensionsKit.h */,
-				1B1FC32B1DFC830E0032B46F /* Info.plist */,
-				1B1FC3321DFC835F0032B46F /* UIControl+PrettyExtensionsKit.swift */,
-				1B1FC34A1DFC87850032B46F /* UIView+PrettyExtensionsKit.swift */,
-				1B1FC3511DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift */,
-				1B1FC3531DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift */,
-				1BE6DECD1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift */,
-				1BE6DECF1DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift */,
-				1B75F4B91E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift */,
-				1B1FC3551DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift */,
-				1B245ABD1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift */,
-				1B75F4BD1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift */,
-			);
-			path = PrettyExtensionsKit;
 			sourceTree = "<group>";
 		};
 		1B1FC3391DFC845D0032B46F /* Example */ = {
@@ -145,6 +126,49 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		1B27D0841E07F4B1008EA305 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1B27D08B1E07F4B1008EA305 /* PrettyExtensionsKit.h */,
+				1B27D09F1E07F575008EA305 /* UIKit */,
+				1B27D09E1E07F560008EA305 /* CoreGraphics */,
+				1B27D09D1E07F53E008EA305 /* Swift */,
+				1B27D0891E07F4B1008EA305 /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1B27D09D1E07F53E008EA305 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				1B27D08A1E07F4B1008EA305 /* Int+PrettyExtensionsKit.swift */,
+				1B27D0871E07F4B1008EA305 /* Double+PrettyExtensionsKit.swift */,
+				1B27D0881E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift */,
+				1B27D0861E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift */,
+				1B27D08C1E07F4B1008EA305 /* Sequence+PrettyExtensionsKit.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		1B27D09E1E07F560008EA305 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				1B27D0851E07F4B1008EA305 /* CGFloat+PrettyExtensionsKit.swift */,
+			);
+			name = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		1B27D09F1E07F575008EA305 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */,
+				1B27D08D1E07F4B1008EA305 /* UIColor+PrettyExtensionsKit.swift */,
+				1B27D08E1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift */,
+				1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -152,7 +176,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B1FC32C1DFC830E0032B46F /* PrettyExtensionsKit.h in Headers */,
+				1B27D0971E07F4B1008EA305 /* PrettyExtensionsKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,16 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B75F4BA1E05F61E00DC020A /* CGFloat+PrettyExtensionsKit.swift in Sources */,
-				1BE6DED01DFDEB3F007825C1 /* Double+PrettyExtensionsKit.swift in Sources */,
-				1B75F4BE1E072AAD00DC020A /* UIColor+PrettyExtensionsKit.swift in Sources */,
-				1B1FC34B1DFC87850032B46F /* UIView+PrettyExtensionsKit.swift in Sources */,
-				1BE6DECE1DFDEAE1007825C1 /* Float+PrettyExtensionsKit.swift in Sources */,
-				1B1FC3331DFC835F0032B46F /* UIControl+PrettyExtensionsKit.swift in Sources */,
-				1B1FC3561DFDC9420032B46F /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */,
-				1B245ABE1E00301400F6791D /* Sequence+PrettyExtensionsKit.swift in Sources */,
-				1B1FC3541DFDC45E0032B46F /* Int+PrettyExtensionsKit.swift in Sources */,
-				1B1FC3521DFC8B2B0032B46F /* UITableView+PrettyExtensionsKit.swift in Sources */,
+				1B27D09A1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift in Sources */,
+				1B27D0991E07F4B1008EA305 /* UIColor+PrettyExtensionsKit.swift in Sources */,
+				1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */,
+				1B27D0921E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */,
+				1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */,
+				1B27D0981E07F4B1008EA305 /* Sequence+PrettyExtensionsKit.swift in Sources */,
+				1B27D0931E07F4B1008EA305 /* Double+PrettyExtensionsKit.swift in Sources */,
+				1B27D0961E07F4B1008EA305 /* Int+PrettyExtensionsKit.swift in Sources */,
+				1B27D0911E07F4B1008EA305 /* CGFloat+PrettyExtensionsKit.swift in Sources */,
+				1B27D0941E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +447,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PrettyExtensionsKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nab0y4enko.PrettyExtensionsKit;
@@ -443,7 +467,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PrettyExtensionsKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nab0y4enko.PrettyExtensionsKit;
