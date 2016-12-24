@@ -25,6 +25,7 @@
 		1B27D09A1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08E1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift */; };
 		1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */; };
 		1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */; };
+		1BD5B2FB1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5B2FA1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B75F4B81E05A56500DC020A /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
+		1BD5B2FA1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				1B27D0881E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift */,
 				1B27D0861E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift */,
 				1B27D08C1E07F4B1008EA305 /* Sequence+PrettyExtensionsKit.swift */,
+				1BD5B2FA1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift */,
 			);
 			name = Swift;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */,
 				1B27D0921E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */,
 				1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */,
+				1BD5B2FB1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift in Sources */,
 				1B27D0981E07F4B1008EA305 /* Sequence+PrettyExtensionsKit.swift in Sources */,
 				1B27D0931E07F4B1008EA305 /* Double+PrettyExtensionsKit.swift in Sources */,
 				1B27D0961E07F4B1008EA305 /* Int+PrettyExtensionsKit.swift in Sources */,
