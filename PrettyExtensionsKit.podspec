@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
     s.source_files    = "Sources/**/*.swift"
 
-    s.frameworks      = "Foundation", "UIKit", "CoreGraphics"
+    s.frameworks      = "Foundation", "UIKit", "CoreGraphics", "QuartzCore"
 
     s.requires_arc    = true
 end
