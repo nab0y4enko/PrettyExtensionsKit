@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary      = "A pretty set of extensions for the development."
 
     s.description = <<-DESC
-                    A pretty set of extensions for the development.
+                    A pretty set of extensions written on Swift.
                     DESC
 
     s.homepage     = "https://github.com/nab0y4enko/PrettyExtensionsKit"
