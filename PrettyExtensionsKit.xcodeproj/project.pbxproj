@@ -25,6 +25,7 @@
 		1B27D09A1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08E1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift */; };
 		1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */; };
 		1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */; };
+		1BD204781E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */; };
 		1BD5B2FB1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5B2FA1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift */; };
 		1BD5B2FE1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5B2FD1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift */; };
 		1BD5B3001E102B5B00E85EC4 /* UIViewController+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5B2FF1E102B5B00E85EC4 /* UIViewController+PrettyExtensionsKit.swift */; };
@@ -77,6 +78,7 @@
 		1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B75F4B81E05A56500DC020A /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
+		1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BD5B2FA1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BD5B2FD1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransition+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BD5B2FF1E102B5B00E85EC4 /* UIViewController+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */,
 				1BD5B2FF1E102B5B00E85EC4 /* UIViewController+PrettyExtensionsKit.swift */,
 				1BD5B3011E102CE700E85EC4 /* UINavigationController+PrettyExtensionsKit.swift */,
+				1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B27D09A1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift in Sources */,
+				1BD204781E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift in Sources */,
 				1B27D0991E07F4B1008EA305 /* UIColor+PrettyExtensionsKit.swift in Sources */,
 				1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */,
 				1B27D0921E07F4B1008EA305 /* CountableClosedRange+PrettyExtensionsKit.swift in Sources */,
