@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIView {
     
-    @IBInspectable var cornerRadius: CGFloat {
+    @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -20,7 +20,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat {
+    @IBInspectable public var borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -29,15 +29,28 @@ public extension UIView {
         }
     }
     
-    @IBInspectable var borderColor: UIColor? {
+    @IBInspectable public var borderColor: UIColor {
         get {
             if let borderColor = layer.borderColor {
                 return UIColor(cgColor: borderColor)
             }
-            return nil
+            return UIColor.clear
         }
         set {
-            layer.borderColor = newValue?.cgColor
+            layer.borderColor = newValue.cgColor
+        }
+    }
+}
+
+public extension UIView {
+    
+    public var isHiddenAndInteractionDisabled: Bool {
+        get {
+            return isHidden && !isUserInteractionEnabled
+        }
+        set {
+            isHidden = newValue
+            isUserInteractionEnabled = !newValue
         }
     }
 }

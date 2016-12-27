@@ -8,18 +8,21 @@
 
 import Foundation
 
-extension UITextField {
+public extension UITextField {
     
-    @IBInspectable var placeholderColor: UIColor? {
+    @IBInspectable public var placeholderColor: UIColor {
         get {
-            return self.placeholderColor
+            if let attributedPlaceholder = attributedPlaceholder, attributedPlaceholder.length > 0 {
+                var range = NSRange(location: 0, length: attributedPlaceholder.length)
+                return attributedPlaceholder.attribute(NSForegroundColorAttributeName, at: 1, effectiveRange: &range) as! UIColor
+            }
+            
+            //  Return `default` color http://stackoverflow.com/a/33033298
+            return UIColor(hexString: "#C7C7CD")!
         }
         set {
-            guard let placeholderColor = newValue else {
-                return
-            }
             let placeholderString = self.placeholder ?? ""
-            attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [NSForegroundColorAttributeName: placeholderColor])
+            attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [NSForegroundColorAttributeName: newValue])
         }
     }
 }

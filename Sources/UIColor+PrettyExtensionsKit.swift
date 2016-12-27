@@ -15,7 +15,7 @@ extension UIColor {
     }
 }
 
-extension UIColor {
+public extension UIColor {
     
     public convenience init?(hexString: String) {
         var hexString = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
