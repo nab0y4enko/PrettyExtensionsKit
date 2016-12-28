@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
     s.name         = "PrettyExtensionsKit"
-    s.version      = "0.1.1"
-    s.summary      = "A pretty set of extensions for the development."
+    s.version      = "0.1.2"
+    s.summary      = "A pretty set of extensions for the development on Swift."
 
     s.description = <<-DESC
-                    A pretty set of extensions written on Swift.
+                    My pretty set of extensions for the development on Swift.
                     DESC
 
     s.homepage     = "https://github.com/nab0y4enko/PrettyExtensionsKit"
