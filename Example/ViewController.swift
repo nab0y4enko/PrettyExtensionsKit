@@ -13,23 +13,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
-    
-    // MARK: - Fuck -
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(textField.placeholderColor)
-        
-//        Int32.random((Int32.min)..<Int32.max)
-//
-//        Int.random(0...1)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
-
-    
 }
 

@@ -25,6 +25,7 @@
 		1B27D09A1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08E1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift */; };
 		1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */; };
 		1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */; };
+		1B3F9FEA1E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */; };
 		1BB462F31E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */; };
 		1BB462F51E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */; };
 		1BD204781E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */; };
@@ -79,6 +80,7 @@
 		1B27D08E1E07F4B1008EA305 /* UIControl+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B75F4B81E05A56500DC020A /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
 		1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIButton+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */,
 				1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */,
 				1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */,
+				1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				1B27D0941E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift in Sources */,
 				1BD5B3021E102CE700E85EC4 /* UINavigationController+PrettyExtensionsKit.swift in Sources */,
 				1BD5B2FE1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift in Sources */,
+				1B3F9FEA1E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
