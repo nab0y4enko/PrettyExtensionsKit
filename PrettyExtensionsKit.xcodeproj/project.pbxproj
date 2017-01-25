@@ -26,6 +26,8 @@
 		1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */; };
 		1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */; };
 		1B3F9FEA1E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */; };
+		1B569B8A1E38D7AA00F14EDA /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B569B891E38D7AA00F14EDA /* UIColorTests.swift */; };
+		1B569B8C1E38D7AA00F14EDA /* PrettyExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */; };
 		1BB462F31E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */; };
 		1BB462F51E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */; };
 		1BD204781E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */; };
@@ -37,6 +39,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		1B1FC34E1DFC89750032B46F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B1FC31E1DFC830E0032B46F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B1FC3261DFC830E0032B46F;
+			remoteInfo = PrettyExtensionsKit;
+		};
+		1B569B8D1E38D7AA00F14EDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1B1FC31E1DFC830E0032B46F /* Project object */;
 			proxyType = 1;
@@ -81,6 +90,9 @@
 		1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B569B871E38D7AA00F14EDA /* PrettyExtensionsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettyExtensionsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B569B891E38D7AA00F14EDA /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		1B569B8B1E38D7AA00F14EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B75F4B81E05A56500DC020A /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
 		1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIButton+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
@@ -107,6 +119,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1B569B841E38D7AA00F14EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B569B8C1E38D7AA00F14EDA /* PrettyExtensionsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,6 +135,7 @@
 			children = (
 				1B27D0841E07F4B1008EA305 /* Sources */,
 				1B1FC3391DFC845D0032B46F /* Example */,
+				1B569B881E38D7AA00F14EDA /* PrettyExtensionsKitTests */,
 				1B1FC3281DFC830E0032B46F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +145,7 @@
 			children = (
 				1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */,
 				1B1FC3381DFC845D0032B46F /* Example.app */,
+				1B569B871E38D7AA00F14EDA /* PrettyExtensionsKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +215,15 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
+		1B569B881E38D7AA00F14EDA /* PrettyExtensionsKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B569B891E38D7AA00F14EDA /* UIColorTests.swift */,
+				1B569B8B1E38D7AA00F14EDA /* Info.plist */,
+			);
+			path = PrettyExtensionsKitTests;
+			sourceTree = "<group>";
+		};
 		1BD5B2FC1E0F094200E85EC4 /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,13 +283,31 @@
 			productReference = 1B1FC3381DFC845D0032B46F /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1B569B861E38D7AA00F14EDA /* PrettyExtensionsKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B569B911E38D7AA00F14EDA /* Build configuration list for PBXNativeTarget "PrettyExtensionsKitTests" */;
+			buildPhases = (
+				1B569B831E38D7AA00F14EDA /* Sources */,
+				1B569B841E38D7AA00F14EDA /* Frameworks */,
+				1B569B851E38D7AA00F14EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B569B8E1E38D7AA00F14EDA /* PBXTargetDependency */,
+			);
+			name = PrettyExtensionsKitTests;
+			productName = PrettyExtensionsKitTests;
+			productReference = 1B569B871E38D7AA00F14EDA /* PrettyExtensionsKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1B1FC31E1DFC830E0032B46F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Oleksii Naboichenko";
 				TargetAttributes = {
@@ -269,6 +318,11 @@
 					};
 					1B1FC3371DFC845D0032B46F = {
 						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					1B569B861E38D7AA00F14EDA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T8835YW8HM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -288,6 +342,7 @@
 			targets = (
 				1B1FC3261DFC830E0032B46F /* PrettyExtensionsKit */,
 				1B1FC3371DFC845D0032B46F /* Example */,
+				1B569B861E38D7AA00F14EDA /* PrettyExtensionsKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,6 +362,13 @@
 				1B1FC3451DFC845D0032B46F /* LaunchScreen.storyboard in Resources */,
 				1B1FC3421DFC845D0032B46F /* Assets.xcassets in Resources */,
 				1B1FC3401DFC845D0032B46F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B569B851E38D7AA00F14EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +409,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1B569B831E38D7AA00F14EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B569B8A1E38D7AA00F14EDA /* UIColorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -354,6 +424,11 @@
 			isa = PBXTargetDependency;
 			target = 1B1FC3261DFC830E0032B46F /* PrettyExtensionsKit */;
 			targetProxy = 1B1FC34E1DFC89750032B46F /* PBXContainerItemProxy */;
+		};
+		1B569B8E1E38D7AA00F14EDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B1FC3261DFC830E0032B46F /* PrettyExtensionsKit */;
+			targetProxy = 1B569B8D1E38D7AA00F14EDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -487,6 +562,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +583,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -543,6 +620,32 @@
 			};
 			name = Release;
 		};
+		1B569B8F1E38D7AA00F14EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T8835YW8HM;
+				INFOPLIST_FILE = PrettyExtensionsKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nab0y4enko.PrettyExtensionsKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1B569B901E38D7AA00F14EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T8835YW8HM;
+				INFOPLIST_FILE = PrettyExtensionsKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nab0y4enko.PrettyExtensionsKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +675,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1B569B911E38D7AA00F14EDA /* Build configuration list for PBXNativeTarget "PrettyExtensionsKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B569B8F1E38D7AA00F14EDA /* Debug */,
+				1B569B901E38D7AA00F14EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
