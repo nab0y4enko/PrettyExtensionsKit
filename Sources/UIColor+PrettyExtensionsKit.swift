@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
     /// Generate random color
     public static var random: UIColor {
@@ -22,7 +22,7 @@ public extension UIColor {
         var hexString = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         
         if hexString.hasPrefix("#") {
-            hexString = hexString.chopPrefix()
+            hexString = hexString.choppedPrefix()
         }
         
         var hexValue: UInt32 = 0

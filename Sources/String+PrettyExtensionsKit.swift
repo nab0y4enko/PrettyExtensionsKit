@@ -6,13 +6,13 @@
 //  Copyright © 2016 Oleksii Naboichenko. All rights reserved.
 //
 
-extension String {
+public extension String {
     
-    func chopPrefix(_ count: Int = 1) -> String {
+    public func choppedPrefix(_ count: Int = 1) -> String {
         return substring(from: characters.index(startIndex, offsetBy: count))
     }
     
-    func chopSuffix(_ count: Int = 1) -> String {
+    public func choppedSuffix(_ count: Int = 1) -> String {
         return substring(to: characters.index(endIndex, offsetBy: -count))
     }
 }

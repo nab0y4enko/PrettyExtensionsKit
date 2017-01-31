@@ -8,10 +8,10 @@
 
 import QuartzCore
 
-extension CATransition {
+public extension CATransition {
     
     // MARK: - Initializers
-    convenience init(type: String, subtype: String? = nil) {
+    public convenience init(type: String, subtype: String? = nil) {
         self.init()
         
         self.type = type

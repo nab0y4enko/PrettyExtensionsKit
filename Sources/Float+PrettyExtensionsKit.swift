@@ -16,21 +16,6 @@ public extension Float {
         return floatRandom / floatUpperBound
     }
     
-//    public static func randomWithoutFractional(_ range: Range<Int>) -> Float {
-//        return Float(Int.random(range))
-//    }
-//    
-//    public static func random(_ range: Range<Int>) -> Float {
-//        let lowerBound = range.lowerBound
-//        let upperBound = range.upperBound
-//        
-//        guard lowerBound.distance(to: upperBound) > 1 else {
-//            return Float(lowerBound)
-//        }
-//        
-//        return randomWithoutFractional(lowerBound..<upperBound-1) + randomFractional()
-//    }
-    
     public static func randomWithoutFractional(_ range: ClosedRange<Int>) -> Float {
         return Float(Int.random(range))
     }

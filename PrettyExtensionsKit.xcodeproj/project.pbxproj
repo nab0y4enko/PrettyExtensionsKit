@@ -26,8 +26,9 @@
 		1B27D09B1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D08F1E07F4B1008EA305 /* UITableView+PrettyExtensionsKit.swift */; };
 		1B27D09C1E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */; };
 		1B3F9FEA1E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */; };
-		1B569B8A1E38D7AA00F14EDA /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B569B891E38D7AA00F14EDA /* UIColorTests.swift */; };
+		1B569B8A1E38D7AA00F14EDA /* UIColorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B569B891E38D7AA00F14EDA /* UIColorTestCase.swift */; };
 		1B569B8C1E38D7AA00F14EDA /* PrettyExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */; };
+		1B9EF4321E4095D700B0F856 /* StringTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EF4311E4095D700B0F856 /* StringTestCase.swift */; };
 		1BB462F31E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */; };
 		1BB462F51E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */; };
 		1BD204781E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */; };
@@ -91,9 +92,10 @@
 		1B27D0901E07F4B1008EA305 /* UIView+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1B569B871E38D7AA00F14EDA /* PrettyExtensionsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettyExtensionsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B569B891E38D7AA00F14EDA /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		1B569B891E38D7AA00F14EDA /* UIColorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTestCase.swift; sourceTree = "<group>"; };
 		1B569B8B1E38D7AA00F14EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B75F4B81E05A56500DC020A /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; };
+		1B9EF4311E4095D700B0F856 /* StringTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTestCase.swift; sourceTree = "<group>"; };
 		1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIButton+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
@@ -218,7 +220,8 @@
 		1B569B881E38D7AA00F14EDA /* PrettyExtensionsKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				1B569B891E38D7AA00F14EDA /* UIColorTests.swift */,
+				1B569B891E38D7AA00F14EDA /* UIColorTestCase.swift */,
+				1B9EF4311E4095D700B0F856 /* StringTestCase.swift */,
 				1B569B8B1E38D7AA00F14EDA /* Info.plist */,
 			);
 			path = PrettyExtensionsKitTests;
@@ -413,7 +416,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B569B8A1E38D7AA00F14EDA /* UIColorTests.swift in Sources */,
+				1B9EF4321E4095D700B0F856 /* StringTestCase.swift in Sources */,
+				1B569B8A1E38D7AA00F14EDA /* UIColorTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +687,7 @@
 				1B569B901E38D7AA00F14EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

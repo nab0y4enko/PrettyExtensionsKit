@@ -1,5 +1,5 @@
 //
-//  UIColorTests.swift
+//  UIColorTestCase.swift
 //  PrettyExtensionsKitTests
 //
 //  Created by Oleksii Naboichenko on 1/25/17.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import PrettyExtensionsKit
 
-class UIColorTests: XCTestCase {
+class UIColorTestCase: XCTestCase {
     
     func testRandomColorWithHexString() {
         let color = UIColor.random
