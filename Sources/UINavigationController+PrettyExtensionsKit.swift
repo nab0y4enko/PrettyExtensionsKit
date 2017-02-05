@@ -16,7 +16,7 @@ public extension UINavigationController {
         pushViewController(viewController, animated: false)
     }
     
-    public final func popViewController(transition: CATransition) {
+    public final func popViewController(withTransition transition: CATransition) {
         view.layer.add(transition, forKey: kCATransition)
         popViewController(animated: false)
     }
