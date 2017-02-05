@@ -22,4 +22,9 @@ class StringTestCase: XCTestCase {
         let choppedString = testString.choppedSuffix(67)
         XCTAssertEqual(choppedString, "Lorem ipsum dolor sit amet, consectetur adipiscing elit")
     }
+    
+    func testQuotedStrings() {
+        XCTAssertEqual("TestString".quoted(), "\"TestString\"")
+        XCTAssertEqual("TestString".quoted(withString: "'"), "'TestString'")
+    }
 }

@@ -8,6 +8,10 @@
 
 public extension String {
     
+    public func quoted(withString string: String = "\"") -> String {
+        return string + self + string
+    }
+    
     public func choppedPrefix(_ count: Int = 1) -> String {
         return substring(from: characters.index(startIndex, offsetBy: count))
     }
