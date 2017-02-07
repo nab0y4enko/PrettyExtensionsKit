@@ -24,6 +24,8 @@
 		1B9EF4321E4095D700B0F856 /* StringTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EF4311E4095D700B0F856 /* StringTestCase.swift */; };
 		1BB462F31E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */; };
 		1BB462F51E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */; };
+		1BC380411E49EAAA00BD7FC0 /* UIBarButtonItem +PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC380401E49EAAA00BD7FC0 /* UIBarButtonItem +PrettyExtensionsKit.swift */; };
+		1BC380431E49EBA800BD7FC0 /* UIBarButtonItemTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC380421E49EBA800BD7FC0 /* UIBarButtonItemTestCase.swift */; };
 		1BD204781E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */; };
 		1BD5B2FB1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5B2FA1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift */; };
 		1BD5B2FE1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5B2FD1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift */; };
@@ -62,6 +64,8 @@
 		1B9EF4311E4095D700B0F856 /* StringTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTestCase.swift; sourceTree = "<group>"; };
 		1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIButton+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1BC380401E49EAAA00BD7FC0 /* UIBarButtonItem +PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem +PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1BC380421E49EBA800BD7FC0 /* UIBarButtonItemTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemTestCase.swift; sourceTree = "<group>"; };
 		1BD204771E11874B00BF3701 /* UITextField+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BD5B2FA1E0F01B900E85EC4 /* String+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BD5B2FD1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransition+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */,
 				1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */,
 				1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */,
+				1BC380401E49EAAA00BD7FC0 /* UIBarButtonItem +PrettyExtensionsKit.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -160,9 +165,10 @@
 		1B569B881E38D7AA00F14EDA /* PrettyExtensionsKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				1B569B8B1E38D7AA00F14EDA /* Info.plist */,
 				1B569B891E38D7AA00F14EDA /* UIColorTestCase.swift */,
 				1B9EF4311E4095D700B0F856 /* StringTestCase.swift */,
-				1B569B8B1E38D7AA00F14EDA /* Info.plist */,
+				1BC380421E49EBA800BD7FC0 /* UIBarButtonItemTestCase.swift */,
 			);
 			path = PrettyExtensionsKitTests;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				1B27D0941E07F4B1008EA305 /* Float+PrettyExtensionsKit.swift in Sources */,
 				1BD5B3021E102CE700E85EC4 /* UINavigationController+PrettyExtensionsKit.swift in Sources */,
 				1BD5B2FE1E0F095D00E85EC4 /* CATransition+PrettyExtensionsKit.swift in Sources */,
+				1BC380411E49EAAA00BD7FC0 /* UIBarButtonItem +PrettyExtensionsKit.swift in Sources */,
 				1B3F9FEA1E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +322,7 @@
 			files = (
 				1B9EF4321E4095D700B0F856 /* StringTestCase.swift in Sources */,
 				1B569B8A1E38D7AA00F14EDA /* UIColorTestCase.swift in Sources */,
+				1BC380431E49EBA800BD7FC0 /* UIBarButtonItemTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
