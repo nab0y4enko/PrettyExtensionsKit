@@ -21,6 +21,7 @@
 		1B3F9FEA1E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F9FE91E1C48210064B02A /* UIAlertController+PrettyExtensionsKit.swift */; };
 		1B569B8A1E38D7AA00F14EDA /* UIColorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B569B891E38D7AA00F14EDA /* UIColorTestCase.swift */; };
 		1B569B8C1E38D7AA00F14EDA /* PrettyExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */; };
+		1B8573D71E4DC0C900983811 /* UIImageTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8573D61E4DC0C900983811 /* UIImageTestCase.swift */; };
 		1B9EF4321E4095D700B0F856 /* StringTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EF4311E4095D700B0F856 /* StringTestCase.swift */; };
 		1BB462F31E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */; };
 		1BB462F51E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */; };
@@ -61,6 +62,7 @@
 		1B569B871E38D7AA00F14EDA /* PrettyExtensionsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettyExtensionsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B569B891E38D7AA00F14EDA /* UIColorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTestCase.swift; sourceTree = "<group>"; };
 		1B569B8B1E38D7AA00F14EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8573D61E4DC0C900983811 /* UIImageTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageTestCase.swift; sourceTree = "<group>"; };
 		1B9EF4311E4095D700B0F856 /* StringTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTestCase.swift; sourceTree = "<group>"; };
 		1BB462F21E15787400A2D7D5 /* UIImage+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
 		1BB462F41E157D6100A2D7D5 /* UIIButton+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIButton+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				1B569B891E38D7AA00F14EDA /* UIColorTestCase.swift */,
 				1B9EF4311E4095D700B0F856 /* StringTestCase.swift */,
 				1BC380421E49EBA800BD7FC0 /* UIBarButtonItemTestCase.swift */,
+				1B8573D61E4DC0C900983811 /* UIImageTestCase.swift */,
 			);
 			path = PrettyExtensionsKitTests;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9EF4321E4095D700B0F856 /* StringTestCase.swift in Sources */,
+				1B8573D71E4DC0C900983811 /* UIImageTestCase.swift in Sources */,
 				1B569B8A1E38D7AA00F14EDA /* UIColorTestCase.swift in Sources */,
 				1BC380431E49EBA800BD7FC0 /* UIBarButtonItemTestCase.swift in Sources */,
 			);
