@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIBarButtonItem {
+public extension UIBarButtonItem {
     
-    open var isHidden: Bool {
+    public var isHidden: Bool {
         get {
             return !isEnabled && tintColor == UIColor.clear
         }
