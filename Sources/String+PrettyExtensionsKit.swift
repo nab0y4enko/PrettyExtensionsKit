@@ -20,3 +20,18 @@ public extension String {
         return substring(to: characters.index(endIndex, offsetBy: -count))
     }
 }
+
+public extension String {
+    
+    public init?(base64: String) {
+        guard let base64data = Data(base64Encoded: base64) else {
+            return nil
+        }
+        
+        self.init(data: base64data, encoding: .utf8)
+    }
+    
+    public var base64String: String {
+        return Data(self.utf8).base64EncodedString()
+    }
+}

@@ -27,4 +27,11 @@ class StringTestCase: XCTestCase {
         XCTAssertEqual("TestString".quoted(), "\"TestString\"")
         XCTAssertEqual("TestString".quoted(withString: "'"), "'TestString'")
     }
+    
+    func testBase64EncodeAndDecode() {
+        let base64String = "TestString".base64String
+        let string = String(base64: base64String)
+        XCTAssertEqual(string, "TestString")
+
+    }
 }

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "PrettyExtensionsKit"
-    s.version      = "0.1.8"
+    s.version      = "0.1.9"
     s.summary      = "A pretty set of extensions for Swift."
 
     s.description = <<-DESC
