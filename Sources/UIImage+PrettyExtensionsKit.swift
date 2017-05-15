@@ -42,25 +42,28 @@ public extension UIImage {
             return nil
         }
         
+        guard cgImage.width != cgImage.height else {
+            return copy() as? UIImage
+        }
+        
+        let imageSize = CGSize(width: cgImage.width, height: cgImage.height)
+
         //Calculate crop rect
         var x: CGFloat = 0
         var y: CGFloat = 0
-        var vergeSize: CGFloat = 0
+        var lowerSideSize: CGFloat = 0
         
-        if size.width > size.height {
+        if imageSize.width > imageSize.height {
             //Landscape
-            x = (size.width - size.height) / 2.0
-            vergeSize = size.height
-        } else if size.width < size.height {
+            x = (imageSize.width - imageSize.height) / 2.0
+            lowerSideSize = imageSize.height
+        } else if imageSize.width < imageSize.height {
             //Portrate
-            y = (size.height - size.width) / 2.0
-            vergeSize = size.width
-        } else {
-            //Square
-            vergeSize = size.width
+            y = (imageSize.height - imageSize.width) / 2.0
+            lowerSideSize = imageSize.width
         }
         
-        let cropRect = CGRect(x: x, y: y, width: vergeSize, height: vergeSize)
+        let cropRect = CGRect(x: x, y: y, width: lowerSideSize, height: lowerSideSize)
         
         //Crop image
         guard let croppedCGImage = cgImage.cropping(to: cropRect) else {
