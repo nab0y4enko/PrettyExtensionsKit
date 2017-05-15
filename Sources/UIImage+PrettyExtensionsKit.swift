@@ -16,6 +16,7 @@ public extension UIImage {
         }
         
         UIGraphicsBeginImageContext(size)
+    
         defer {
             UIGraphicsEndImageContext()
         }
@@ -102,5 +103,4 @@ public extension UIImage {
         
         return newImage
     }
-
 }
