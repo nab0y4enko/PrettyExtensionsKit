@@ -134,7 +134,6 @@ public extension UIImage {
             return nil
         }
         
-        return UIImage(cgImage: cgImage)
+        return UIImage(cgImage: cgImage, scale: scale, orientation: imageOrientation)
     }
-
 }
