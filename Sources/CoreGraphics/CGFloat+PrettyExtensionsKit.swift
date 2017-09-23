@@ -25,3 +25,10 @@ public extension CGFloat {
         return CGFloat(random)
     }
 }
+
+public extension CountableClosedRange where Iterator.Element == Int {
+
+    public func random() -> CGFloat? {
+        return CGFloat.random(lowerBound...upperBound)
+    }
+}

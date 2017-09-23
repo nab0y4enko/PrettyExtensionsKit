@@ -16,12 +16,12 @@ class UIBarButtonItemTestCase: XCTestCase {
         XCTAssertNil(barButtonItem.tintColor)
         XCTAssertTrue(barButtonItem.isEnabled)
 
-        barButtonItem.isHidden = true
+        barButtonItem.isPrettyHidden = true
         XCTAssertNotNil(barButtonItem.tintColor)
         XCTAssertEqual(barButtonItem.tintColor, UIColor.clear)
         XCTAssertFalse(barButtonItem.isEnabled)
         
-        barButtonItem.isHidden = false
+        barButtonItem.isPrettyHidden = false
         XCTAssertNil(barButtonItem.tintColor)
         XCTAssertTrue(barButtonItem.isEnabled)
     }

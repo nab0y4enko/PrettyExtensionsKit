@@ -12,7 +12,7 @@ public extension UIColor {
     
     /// Generate random color
     public static var random: UIColor {
-        return UIColor(red: CGFloat.randomFractional(), green: CGFloat.randomFractional(), blue: CGFloat.randomFractional(), alpha: 1)
+        return UIColor(red: .randomFractional(), green: .randomFractional(), blue: .randomFractional(), alpha: 1)
     }
 }
 
@@ -22,7 +22,7 @@ public extension UIColor {
         var hexString = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         
         if hexString.hasPrefix("#") {
-            hexString = hexString.choppedPrefix()
+            hexString = hexString.prettyChoppedPrefix()
         }
         
         var hexValue: UInt32 = 0
@@ -48,29 +48,36 @@ public extension UIColor {
     }
     
     public func hexString(includeAlpha: Bool = false) -> String {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
-        
-        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        let components = prettyColorComponents
         
         if includeAlpha {
-            return String(format: "#%02X%02X%02X%02X", Int(red * 255), Int(green * 255), Int(blue * 255), Int(alpha * 255))
+            return String(format: "#%02X%02X%02X%02X",
+                          Int(components.red * 255),
+                          Int(components.green * 255),
+                          Int(components.blue * 255),
+                          Int(components.alpha * 255))
         }
-        return String(format: "#%02X%02X%02X", Int(red * 255), Int(green * 255), Int(blue * 255))
+
+        return String(format: "#%02X%02X%02X",
+                      Int(components.red * 255),
+                      Int(components.green * 255),
+                      Int(components.blue * 255))
     }
 }
 
 public extension UIColor {
-    
+
+    public typealias PrettyColorComponents = (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+
     /// rgba color components
-    public var components: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)? {
+    public var prettyColorComponents: PrettyColorComponents {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
-        
-        return getRed(&red, green: &green, blue: &blue, alpha: &alpha) ? (red: red, green: green, blue: blue, alpha: alpha) : nil
+
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+
+        return (red: red, green: green, blue: blue, alpha: alpha)
     }
 }

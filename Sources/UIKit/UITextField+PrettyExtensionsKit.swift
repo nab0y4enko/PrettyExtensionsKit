@@ -21,7 +21,7 @@ public extension UITextField {
             return UIColor(hexString: "#C7C7CD")!
         }
         set {
-            let placeholderString = self.placeholder ?? ""
+            let placeholderString = placeholder ?? ""
             attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [NSForegroundColorAttributeName: newValue])
         }
     }

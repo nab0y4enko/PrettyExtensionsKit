@@ -8,15 +8,15 @@
 
 public extension String {
     
-    public func quoted(withString string: String = "\"") -> String {
+    public func prettyQuoted(withString string: String = "\"") -> String {
         return string + self + string
     }
     
-    public func choppedPrefix(_ count: Int = 1) -> String {
+    public func prettyChoppedPrefix(_ count: Int = 1) -> String {
         return substring(from: characters.index(startIndex, offsetBy: count))
     }
     
-    public func choppedSuffix(_ count: Int = 1) -> String {
+    public func prettyChoppedSuffix(_ count: Int = 1) -> String {
         return substring(to: characters.index(endIndex, offsetBy: -count))
     }
 }
@@ -32,6 +32,6 @@ public extension String {
     }
     
     public var base64String: String {
-        return Data(self.utf8).base64EncodedString()
+        return Data(utf8).base64EncodedString()
     }
 }
