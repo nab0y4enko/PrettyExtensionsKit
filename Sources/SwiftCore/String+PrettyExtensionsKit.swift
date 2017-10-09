@@ -13,11 +13,29 @@ public extension String {
     }
     
     public func prettyChoppedPrefix(_ count: Int = 1) -> String {
-        return substring(from: characters.index(startIndex, offsetBy: count))
+        guard count > 0 else {
+            return String(self)
+        }
+
+        guard count < characters.count else {
+            return String()
+        }
+
+        let startIndex = index(self.startIndex, offsetBy: count)
+        return String(self[startIndex...])
     }
     
     public func prettyChoppedSuffix(_ count: Int = 1) -> String {
-        return substring(to: characters.index(endIndex, offsetBy: -count))
+        guard count > 0 else {
+            return String(self)
+        }
+
+        guard count < characters.count else {
+            return String()
+        }
+
+        let endIndex = index(self.endIndex, offsetBy: -count)
+        return String(self[..<endIndex])
     }
 }
 

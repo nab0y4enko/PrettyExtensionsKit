@@ -13,16 +13,36 @@ class StringTestCase: XCTestCase {
     
     let testString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
     
-    func testChopPrefix() {
+    func testChoppedPrefix() {
         let choppedString = testString.prettyChoppedPrefix(6)
         XCTAssertEqual(choppedString, "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")
     }
-    
-    func testChopSuffix() {
+
+    func testChoppedPrefixWithNegativeCount() {
+        let choppedString = testString.prettyChoppedPrefix(-3636)
+        XCTAssertEqual(choppedString, testString)
+    }
+
+    func testChoppedPrefixWithNumberGreaterThanStringLenght() {
+        let choppedString = testString.prettyChoppedPrefix(3636)
+        XCTAssertEqual(choppedString.count, 0)
+    }
+
+    func testChoppedSuffix() {
         let choppedString = testString.prettyChoppedSuffix(67)
         XCTAssertEqual(choppedString, "Lorem ipsum dolor sit amet, consectetur adipiscing elit")
     }
-    
+
+    func testChoppedSuffixWithNegativeCount() {
+        let choppedString = testString.prettyChoppedSuffix(-3636)
+        XCTAssertEqual(choppedString, testString)
+    }
+
+    func testChoppedSuffixWithNumberGreaterThanStringLenght() {
+        let choppedString = testString.prettyChoppedSuffix(3636)
+        XCTAssertEqual(choppedString.count, 0)
+    }
+
     func testQuotedStrings() {
         XCTAssertEqual("TestString".prettyQuoted(), "\"TestString\"")
         XCTAssertEqual("TestString".prettyQuoted(withString: "'"), "'TestString'")

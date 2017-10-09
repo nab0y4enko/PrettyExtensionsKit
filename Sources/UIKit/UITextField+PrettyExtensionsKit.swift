@@ -14,7 +14,7 @@ public extension UITextField {
         get {
             if let attributedPlaceholder = attributedPlaceholder, attributedPlaceholder.length > 0 {
                 var range = NSRange(location: 0, length: attributedPlaceholder.length)
-                return attributedPlaceholder.attribute(NSForegroundColorAttributeName, at: 1, effectiveRange: &range) as! UIColor
+                return attributedPlaceholder.attribute(NSAttributedStringKey.foregroundColor, at: 1, effectiveRange: &range) as! UIColor
             }
             
             //  Return `default` color http://stackoverflow.com/a/33033298
@@ -22,7 +22,10 @@ public extension UITextField {
         }
         set {
             let placeholderString = placeholder ?? ""
-            attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [NSForegroundColorAttributeName: newValue])
+            let attributes = [
+                NSAttributedStringKey.foregroundColor: newValue
+            ]
+            attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: attributes)
         }
     }
 }

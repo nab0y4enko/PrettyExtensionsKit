@@ -9,7 +9,7 @@
 public extension UIAlertController {
     
     // MARK: - Private Properties
-    private static var defaultAlertTitle: String {
+    static var defaultAlertTitle: String {
         let bundleName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String
         return bundleName ?? "Ooops!"
     }
