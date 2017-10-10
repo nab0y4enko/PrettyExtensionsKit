@@ -6,12 +6,10 @@
 //  Copyright © 2017 Oleksii Naboichenko. All rights reserved.
 //
 
-import Foundation
-
 public extension UIAlertController {
     
     // MARK: - Private Properties
-    private static var defaultAlertTitle: String {
+    static var defaultAlertTitle: String {
         let bundleName = Bundle.main.infoDictionary?[kCFBundleNameKey as String] as? String
         return bundleName ?? "Ooops!"
     }

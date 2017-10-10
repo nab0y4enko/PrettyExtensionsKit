@@ -13,7 +13,7 @@ class UIColorTestCase: XCTestCase {
     
     func testRandomColorWithHexString() {
         let color = UIColor.random
-        let components = color.components
+        let components = color.prettyColorComponents
         XCTAssertNotNil(components)
     }
 
@@ -21,9 +21,9 @@ class UIColorTestCase: XCTestCase {
         let testHexString = "#FF0000"
         let color = UIColor(hexString: testHexString)
         XCTAssertNotNil(color)
-        XCTAssertEqual(color!.components?.red, 1)
-        XCTAssertEqual(color!.components?.green, 0)
-        XCTAssertEqual(color!.components?.blue, 0)
+        XCTAssertEqual(color!.prettyColorComponents.red, 1)
+        XCTAssertEqual(color!.prettyColorComponents.green, 0)
+        XCTAssertEqual(color!.prettyColorComponents.blue, 0)
         XCTAssertEqual(color!.hexString().lowercased(), testHexString.lowercased())
     }
     
@@ -31,18 +31,17 @@ class UIColorTestCase: XCTestCase {
         let testHexString = "#FF0000FF"
         let color = UIColor(hexString: testHexString)
         XCTAssertNotNil(color)
-        XCTAssertEqual(color!.components?.alpha, 1)
+        XCTAssertEqual(color!.prettyColorComponents.alpha, 1)
         XCTAssertEqual(color!.hexString(includeAlpha: true).lowercased(), testHexString.lowercased())
     }
     
     func testColorWithWrongHexString() {
         let color = UIColor(hexString: "#DDYYUUIIOOPP")
-        XCTAssertNil(color?.components)
+        XCTAssertNil(color?.prettyColorComponents)
     }
 
     func testColorWithEmptyHexString() {
         let color = UIColor(hexString: "")
-        XCTAssertNil(color?.components)
+        XCTAssertNil(color?.prettyColorComponents)
     }
-
 }

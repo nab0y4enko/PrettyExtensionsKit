@@ -11,12 +11,12 @@ import QuartzCore
 
 public extension UINavigationController {
     
-    public final func show(_ viewController: UIViewController, transition: CATransition) {
+    public final func prettyShow(_ viewController: UIViewController, withTransition transition: CATransition) {
         view.layer.add(transition, forKey: kCATransition)
         pushViewController(viewController, animated: false)
     }
     
-    public final func popViewController(withTransition transition: CATransition) {
+    public final func prettyPop(withTransition transition: CATransition) {
         view.layer.add(transition, forKey: kCATransition)
         popViewController(animated: false)
     }

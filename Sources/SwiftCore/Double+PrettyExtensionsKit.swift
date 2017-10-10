@@ -35,3 +35,10 @@ public extension Double {
         return randomWithoutFractional(lowerBound...upperBound-1) + randomFractional()
     }
 }
+
+public extension CountableClosedRange where Iterator.Element == Int {
+
+    public func random() ->  Double? {
+        return Double.random(lowerBound...upperBound)
+    }
+}

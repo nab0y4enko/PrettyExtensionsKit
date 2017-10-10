@@ -11,7 +11,7 @@ import CoreGraphics
 public extension UITableView {
 
     public func indexPathForCell(whichContains view: UIView?) -> IndexPath? {
-        let convertedOriginPoint = convert(CGPoint(), from: view)
+        let convertedOriginPoint = convert(CGPoint.zero, from: view)
         return indexPathForRow(at: convertedOriginPoint)
     }
 }

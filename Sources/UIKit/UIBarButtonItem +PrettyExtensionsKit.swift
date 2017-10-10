@@ -10,12 +10,12 @@ import UIKit
 
 public extension UIBarButtonItem {
     
-    public var isHidden: Bool {
+    public var isPrettyHidden: Bool {
         get {
-            return !isEnabled && tintColor == UIColor.clear
+            return !isEnabled && tintColor == .clear
         }
         set {
-            tintColor = newValue ? UIColor.clear : nil
+            tintColor = newValue ? .clear : nil
             isEnabled = !newValue
         }
     }

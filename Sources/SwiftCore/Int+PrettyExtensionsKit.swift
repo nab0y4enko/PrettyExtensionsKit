@@ -25,3 +25,10 @@ public extension Int {
         return random(lowerBound..<upperBound)
     }
 }
+
+public extension CountableClosedRange where Iterator.Element == Int {
+
+    public func random() -> Int? {
+        return Int.random(lowerBound...upperBound)
+    }
+}
