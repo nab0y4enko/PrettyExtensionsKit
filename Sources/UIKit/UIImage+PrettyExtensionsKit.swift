@@ -9,6 +9,13 @@
 import UIKit
 
 public extension UIImage {
+
+    public var prettyData : Data? {
+        return cgImage?.dataProvider?.data as Data?
+    }
+}
+
+public extension UIImage {
     
     public convenience init?(withColor color: UIColor?, size: CGSize = CGSize(width: 1, height: 1)) {
         guard let color = color, size.width > 0, size.height > 0 else {
