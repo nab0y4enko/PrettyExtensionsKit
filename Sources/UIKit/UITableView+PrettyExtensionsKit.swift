@@ -14,4 +14,14 @@ public extension UITableView {
         let convertedOriginPoint = convert(CGPoint.zero, from: view)
         return indexPathForRow(at: convertedOriginPoint)
     }
+
+    public func deselectAll(animated: Bool = false) {
+        guard let indexPaths = indexPathsForSelectedRows else {
+            return
+        }
+
+        indexPaths.forEach { (indexPath) in
+            deselectRow(at: indexPath, animated: animated)
+        }
+    }
 }

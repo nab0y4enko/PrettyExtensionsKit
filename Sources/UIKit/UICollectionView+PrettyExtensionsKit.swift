@@ -14,4 +14,14 @@ public extension UICollectionView {
         let convertedOriginPoint = convert(CGPoint.zero, from: view)
         return indexPathForItem(at: convertedOriginPoint)
     }
+
+    public func deselectAll(animated: Bool = false) {
+        guard let indexPaths = indexPathsForSelectedItems else {
+            return
+        }
+
+        indexPaths.forEach { (indexPath) in
+            deselectItem(at: indexPath, animated: animated)
+        }
+    }
 }
