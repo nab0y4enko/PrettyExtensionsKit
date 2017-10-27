@@ -23,5 +23,10 @@ public extension UITableView {
         indexPaths.forEach { (indexPath) in
             deselectRow(at: indexPath, animated: animated)
         }
+
+        //Dissmiss row actions
+        let previousEditingValue = isEditing
+        setEditing(false, animated: animated)
+        isEditing = previousEditingValue
     }
 }
