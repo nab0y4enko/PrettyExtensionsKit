@@ -15,14 +15,11 @@ public extension UIAlertController {
     }
     
     // MARK: - Initializers
-    public convenience init(title: String? = defaultAlertTitle, message: String?, actionTitle: String? = nil, actionHandler: ((UIAlertAction) -> Void)? = nil) {
-        //Initialize
+    public convenience init(alertTitle title: String? = defaultAlertTitle, localizedError: LocalizedError?) {
+        self.init(title: title, message: localizedError?.localizedDescription, preferredStyle: .alert)
+    }
+
+    public convenience init(alertTitle title: String? = defaultAlertTitle, message: String?) {
         self.init(title: title, message: message, preferredStyle: .alert)
-        
-        //Add default action
-        if actionTitle != nil {
-            let action = UIAlertAction(title: actionTitle, style: .default, handler: actionHandler)
-            addAction(action)
-        }
     }
 }
