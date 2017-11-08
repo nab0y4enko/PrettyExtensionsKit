@@ -17,7 +17,7 @@ public extension String {
             return String(self)
         }
 
-        guard count < characters.count else {
+        guard count < self.count else {
             return String()
         }
 
@@ -30,7 +30,7 @@ public extension String {
             return String(self)
         }
 
-        guard count < characters.count else {
+        guard count < self.count else {
             return String()
         }
 

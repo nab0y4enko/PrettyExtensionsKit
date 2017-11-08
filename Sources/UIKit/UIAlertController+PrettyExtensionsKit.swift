@@ -15,8 +15,8 @@ public extension UIAlertController {
     }
     
     // MARK: - Initializers
-    public convenience init(alertTitle title: String? = defaultAlertTitle, localizedError: LocalizedError?) {
-        self.init(title: title, message: localizedError?.localizedDescription, preferredStyle: .alert)
+    public convenience init(alertTitle title: String? = defaultAlertTitle, error: Error?) {
+        self.init(title: title, message: error?.localizedDescription, preferredStyle: .alert)
     }
 
     public convenience init(alertTitle title: String? = defaultAlertTitle, message: String?) {
