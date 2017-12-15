@@ -53,3 +53,14 @@ public extension String {
         return Data(utf8).base64EncodedString()
     }
 }
+
+public extension String {
+
+    func prettyContains(_ substring: String) -> Bool {
+        return self.range(of: substring) != nil
+    }
+
+    func prettyContainsIgnoringCase(_ substring: String) -> Bool {
+        return self.range(of: substring, options: .caseInsensitive) != nil
+    }
+}
