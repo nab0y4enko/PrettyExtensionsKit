@@ -22,4 +22,14 @@ public extension UIAlertController {
     public convenience init(alertTitle title: String? = defaultAlertTitle, message: String?) {
         self.init(title: title, message: message, preferredStyle: .alert)
     }
+    
+    // MARK: - Public Instance Methods
+    public func addAcceptAction(withTitle title: String = "OK") {
+        let acceptAction = UIAlertAction(
+            title: title,
+            style: .default
+        )
+        
+        addAction(acceptAction)
+    }
 }

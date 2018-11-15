@@ -10,18 +10,14 @@ import CoreGraphics
 
 public extension UICollectionView {
 
-    public func indexPathForCell(whichContains view: UIView?) -> IndexPath? {
-        let convertedOriginPoint = convert(CGPoint.zero, from: view)
+    public func indexPathForCell(whichContainsSubview subview: UIView?) -> IndexPath? {
+        let convertedOriginPoint = convert(CGPoint.zero, from: subview)
         return indexPathForItem(at: convertedOriginPoint)
     }
 
     public func deselectAll(animated: Bool = false) {
-        guard let indexPaths = indexPathsForSelectedItems else {
-            return
-        }
-
-        indexPaths.forEach { (indexPath) in
-            deselectItem(at: indexPath, animated: animated)
+        indexPathsForSelectedItems?.forEach {
+            deselectItem(at: $0, animated: animated)
         }
     }
 }

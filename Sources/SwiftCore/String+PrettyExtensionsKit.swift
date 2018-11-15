@@ -41,12 +41,12 @@ public extension String {
 
 public extension String {
     
-    public init?(base64: String) {
-        guard let base64data = Data(base64Encoded: base64) else {
+    public init?(base64String: String, encoding: String.Encoding = .utf8) {
+        guard let base64data = Data(base64Encoded: base64String) else {
             return nil
         }
         
-        self.init(data: base64data, encoding: .utf8)
+        self.init(data: base64data, encoding: encoding)
     }
     
     public var base64String: String {
@@ -56,11 +56,12 @@ public extension String {
 
 public extension String {
 
-    func prettyContains(_ substring: String) -> Bool {
-        return self.range(of: substring) != nil
-    }
-
-    func prettyContainsIgnoringCase(_ substring: String) -> Bool {
-        return self.range(of: substring, options: .caseInsensitive) != nil
+    func prettyContains(searchString: String, ignoreCase: Bool) -> Bool {
+        let searchStringRange = range(
+            of: searchString,
+            options: ignoreCase ? .caseInsensitive : []
+        )
+        
+        return searchStringRange != nil
     }
 }

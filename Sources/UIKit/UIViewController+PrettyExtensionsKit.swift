@@ -11,12 +11,12 @@ import QuartzCore
 
 public extension UIViewController {
     
-    public final func animatedPresent(_ viewControllerToPresent: UIViewController, transition: CATransition, completion: (() -> Swift.Void)? = nil) {
+    public final func prettyPresent(_ viewControllerToPresent: UIViewController, transition: CATransition, completion: (() -> Swift.Void)? = nil) {
         view.window?.layer.add(transition, forKey: kCATransition)
         present(viewControllerToPresent, animated: false, completion: completion)
     }
     
-    public final func dismiss(withTransition transition: CATransition, completion: (() -> Swift.Void)? = nil) {
+    public final func prettydismiss(withTransition transition: CATransition, completion: (() -> Swift.Void)? = nil) {
         view.window?.layer.add(transition, forKey: kCATransition)
         dismiss(animated: false, completion: completion)
     }

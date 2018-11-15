@@ -50,7 +50,7 @@ class StringTestCase: XCTestCase {
     
     func testBase64EncodeAndDecode() {
         let base64String = "TestString".base64String
-        let string = String(base64: base64String)
+        let string = String(base64String: base64String)
         XCTAssertEqual(string, "TestString")
     }
 }

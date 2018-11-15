@@ -10,18 +10,14 @@ import CoreGraphics
 
 public extension UITableView {
 
-    public func indexPathForCell(whichContains view: UIView?) -> IndexPath? {
-        let convertedOriginPoint = convert(CGPoint.zero, from: view)
+    public func indexPathForCell(whichContainsSubview subview: UIView?) -> IndexPath? {
+        let convertedOriginPoint = convert(CGPoint.zero, from: subview)
         return indexPathForRow(at: convertedOriginPoint)
     }
 
     public func deselectAll(animated: Bool = false) {
-        guard let indexPaths = indexPathsForSelectedRows else {
-            return
-        }
-
-        indexPaths.forEach { (indexPath) in
-            deselectRow(at: indexPath, animated: animated)
+        indexPathsForSelectedRows?.forEach {
+            deselectRow(at: $0, animated: animated)
         }
 
         //Dissmiss row actions

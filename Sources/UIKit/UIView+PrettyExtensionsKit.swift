@@ -7,41 +7,6 @@
 //
 
 import UIKit
-
-public extension UIView {
-    
-    public var prettyCornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-            layer.masksToBounds = newValue > 0
-        }
-    }
-    
-    public var prettyBorderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
-            layer.borderWidth = newValue
-        }
-    }
-    
-    public var prettyBorderColor: UIColor {
-        get {
-            if let borderColor = layer.borderColor {
-                return UIColor(cgColor: borderColor)
-            }
-            return UIColor.clear
-        }
-        set {
-            layer.borderColor = newValue.cgColor
-        }
-    }
-}
-
 public extension UIView {
     
     public var isHiddenAndInteractionDisabled: Bool {

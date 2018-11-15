@@ -32,15 +32,19 @@ public extension UIColor {
         
         switch hexString.count {
         case 6: // RGB
-            self.init(red: CGFloat((hexValue & 0xFF0000) >> 16) / 255.0,
-                      green: CGFloat((hexValue & 0x00FF00) >> 8) / 255.0,
-                      blue: CGFloat(hexValue & 0x0000FF) / 255.0,
-                      alpha: 1)
+            self.init(
+                red: CGFloat((hexValue & 0xFF0000) >> 16) / 255.0,
+                green: CGFloat((hexValue & 0x00FF00) >> 8) / 255.0,
+                blue: CGFloat(hexValue & 0x0000FF) / 255.0,
+                alpha: 1
+            )
         case 8: // RGBA
-            self.init(red: CGFloat((hexValue & 0xFF000000) >> 24) / 255.0,
-                      green: CGFloat((hexValue & 0x00FF0000) >> 16) / 255.0,
-                      blue: CGFloat((hexValue & 0x0000FF00) >> 8) / 255.0,
-                      alpha: CGFloat(hexValue & 0x000000FF) / 255.0)
+            self.init(
+                red: CGFloat((hexValue & 0xFF000000) >> 24) / 255.0,
+                green: CGFloat((hexValue & 0x00FF0000) >> 16) / 255.0,
+                blue: CGFloat((hexValue & 0x0000FF00) >> 8) / 255.0,
+                alpha: CGFloat(hexValue & 0x000000FF) / 255.0
+            )
         default:
             print("Invalid hex code string.")
             return nil
@@ -51,17 +55,21 @@ public extension UIColor {
         let components = prettyColorComponents
         
         if includeAlpha {
-            return String(format: "#%02X%02X%02X%02X",
-                          Int(components.red * 255),
-                          Int(components.green * 255),
-                          Int(components.blue * 255),
-                          Int(components.alpha * 255))
+            return String(
+                format: "#%02X%02X%02X%02X",
+                Int(components.red * 255),
+                Int(components.green * 255),
+                Int(components.blue * 255),
+                Int(components.alpha * 255)
+            )
         }
 
-        return String(format: "#%02X%02X%02X",
-                      Int(components.red * 255),
-                      Int(components.green * 255),
-                      Int(components.blue * 255))
+        return String(
+            format: "#%02X%02X%02X",
+            Int(components.red * 255),
+            Int(components.green * 255),
+            Int(components.blue * 255)
+        )
     }
 }
 
