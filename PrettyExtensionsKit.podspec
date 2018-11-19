@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name              = "PrettyExtensionsKit"
     s.module_name       = "PrettyExtensionsKit"
-    s.version           = "0.3"
+    s.version           = "0.3.1"
     s.summary           = "A pretty set of extensions for Swift."
     s.description       = "A pretty set of extensions, which I use when developing applications based on Swift."
     s.homepage          = "https://github.com/nab0y4enko/PrettyExtensionsKit"
@@ -17,33 +17,38 @@ Pod::Spec.new do |s|
 
     s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
     
-    s.default_subspecs = 'SwiftCore', 'Foundation', 'CoreGraphics', 'QuartzCore', 'UIKit'
+    s.default_subspecs = 'SwiftCore', 'Foundation', 'CoreGraphics', 'QuartzCore', 'UIKit', 'CoreLocation'
 
-    s.subspec 'SwiftCore' do |swiftCoreSubspec|
-        swiftCoreSubspec.ios.frameworks = 'UIKit'
-        swiftCoreSubspec.source_files = 'Sources/SwiftCore/*'
+    s.subspec 'SwiftCore' do |subspec|
+        subspec.ios.frameworks = 'UIKit'
+        subspec.source_files = 'Sources/SwiftCore/*'
     end
 
-    s.subspec 'Foundation' do |foundationSubspec|
-        foundationSubspec.ios.frameworks = 'Foundation'
-        foundationSubspec.source_files = 'Sources/Foundation/*'
+    s.subspec 'Foundation' do |subspec|
+        subspec.ios.frameworks = 'Foundation'
+        subspec.source_files = 'Sources/Foundation/*'
     end
 
-    s.subspec 'CoreGraphics' do |coreGraphicsSubspec|
-        coreGraphicsSubspec.ios.frameworks = 'CoreGraphics'
-        coreGraphicsSubspec.source_files = 'Sources/CoreGraphics/*'
-        coreGraphicsSubspec.dependency 'PrettyExtensionsKit/SwiftCore'
+    s.subspec 'CoreGraphics' do |subspec|
+        subspec.ios.frameworks = 'CoreGraphics'
+        subspec.source_files = 'Sources/CoreGraphics/*'
+        subspec.dependency 'PrettyExtensionsKit/SwiftCore'
     end
 
-    s.subspec 'QuartzCore' do |quartzCoreSubspec|
-        quartzCoreSubspec.ios.frameworks = 'QuartzCore'
-        quartzCoreSubspec.source_files = 'Sources/QuartzCore/*'
+    s.subspec 'QuartzCore' do |subspec|
+        subspec.ios.frameworks = 'QuartzCore'
+        subspec.source_files = 'Sources/QuartzCore/*'
     end
 
-    s.subspec 'UIKit' do |uiKitSubspec|
-        uiKitSubspec.ios.frameworks = 'UIKit'
-        uiKitSubspec.source_files = 'Sources/UIKit/*'
-        uiKitSubspec.dependency 'PrettyExtensionsKit/SwiftCore'
-        uiKitSubspec.dependency 'PrettyExtensionsKit/CoreGraphics'
+    s.subspec 'UIKit' do |subspec|
+        subspec.ios.frameworks = 'UIKit'
+        subspec.source_files = 'Sources/UIKit/*'
+        subspec.dependency 'PrettyExtensionsKit/SwiftCore'
+        subspec.dependency 'PrettyExtensionsKit/CoreGraphics'
+    end
+    s.subspec 'CoreLocation' do |subspec|
+        subspec.ios.frameworks = 'CoreLocation'
+        subspec.source_files = 'Sources/CoreLocation/*'
+        subspec.dependency 'PrettyExtensionsKit/SwiftCore'
     end
 end

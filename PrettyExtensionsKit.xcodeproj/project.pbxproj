@@ -39,6 +39,8 @@
 		1BB0BE2A1F76EFA5009C3C28 /* FloatTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0BE291F76EFA5009C3C28 /* FloatTestCase.swift */; };
 		1BB0BE2C1F76EFB4009C3C28 /* IntTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0BE2B1F76EFB4009C3C28 /* IntTestCase.swift */; };
 		1BB0BE311F76F072009C3C28 /* CGFloatTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0BE301F76F072009C3C28 /* CGFloatTestCase.swift */; };
+		1BF9C1A121A2ED8C00E84CB4 /* CLLocationCoordinate2D+PrettyExtensionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9C1A021A2ED8C00E84CB4 /* CLLocationCoordinate2D+PrettyExtensionKit.swift */; };
+		1BF9C1A321A2EF1B00E84CB4 /* CLLocation+PrettyExtensionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF9C1A221A2EF1B00E84CB4 /* CLLocation+PrettyExtensionKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		1BB0BE291F76EFA5009C3C28 /* FloatTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTestCase.swift; sourceTree = "<group>"; };
 		1BB0BE2B1F76EFB4009C3C28 /* IntTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTestCase.swift; sourceTree = "<group>"; };
 		1BB0BE301F76F072009C3C28 /* CGFloatTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatTestCase.swift; sourceTree = "<group>"; };
+		1BF9C1A021A2ED8C00E84CB4 /* CLLocationCoordinate2D+PrettyExtensionKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+PrettyExtensionKit.swift"; sourceTree = "<group>"; };
+		1BF9C1A221A2EF1B00E84CB4 /* CLLocation+PrettyExtensionKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+PrettyExtensionKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		1B27D0841E07F4B1008EA305 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9C19F21A2ED0300E84CB4 /* CoreLocation */,
 				1BB0BDEE1F76D6A8009C3C28 /* CoreGraphics */,
 				1BB0BDFD1F76D6A8009C3C28 /* Foundation */,
 				1BB0BDEC1F76D6A8009C3C28 /* QuartzCore */,
@@ -235,6 +240,15 @@
 				1BB0BE301F76F072009C3C28 /* CGFloatTestCase.swift */,
 			);
 			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		1BF9C19F21A2ED0300E84CB4 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				1BF9C1A021A2ED8C00E84CB4 /* CLLocationCoordinate2D+PrettyExtensionKit.swift */,
+				1BF9C1A221A2EF1B00E84CB4 /* CLLocation+PrettyExtensionKit.swift */,
+			);
+			path = CoreLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,9 +380,11 @@
 				1BB0BE101F76D6A8009C3C28 /* UITableView+PrettyExtensionsKit.swift in Sources */,
 				1BB0BE161F76D6A8009C3C28 /* Double+PrettyExtensionsKit.swift in Sources */,
 				1BB0BE0D1F76D6A8009C3C28 /* UIIButton+PrettyExtensionsKit.swift in Sources */,
+				1BF9C1A121A2ED8C00E84CB4 /* CLLocationCoordinate2D+PrettyExtensionKit.swift in Sources */,
 				1BB0BE181F76D6A8009C3C28 /* Int+PrettyExtensionsKit.swift in Sources */,
 				1BB0BE0A1F76D6A8009C3C28 /* UICollectionView+PrettyExtensionsKit.swift in Sources */,
 				1BB0BE0F1F76D6A8009C3C28 /* UINavigationController+PrettyExtensionsKit.swift in Sources */,
+				1BF9C1A321A2EF1B00E84CB4 /* CLLocation+PrettyExtensionKit.swift in Sources */,
 				1BB0BE091F76D6A8009C3C28 /* UIBarButtonItem +PrettyExtensionsKit.swift in Sources */,
 				1BB0BE081F76D6A8009C3C28 /* UIAlertController+PrettyExtensionsKit.swift in Sources */,
 				1BB0BE111F76D6A8009C3C28 /* UITextField+PrettyExtensionsKit.swift in Sources */,
@@ -452,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -508,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
