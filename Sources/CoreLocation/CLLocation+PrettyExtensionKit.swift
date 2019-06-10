@@ -10,7 +10,7 @@ import CoreLocation
 
 public extension CLLocation {
     
-    public convenience init(latitude: CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance) {
+    convenience init(latitude: CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance) {
         self.init(
             coordinate: CLLocationCoordinate2D(
                 latitude: latitude,
@@ -20,7 +20,7 @@ public extension CLLocation {
         )
     }
     
-    public convenience init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance) {
+    convenience init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance) {
         self.init(
             coordinate: coordinate,
             altitude: altitude,

@@ -10,14 +10,14 @@ import UIKit
 
 public extension UIImage {
 
-    public var prettyData : Data? {
+    var prettyData : Data? {
         return cgImage?.dataProvider?.data as Data?
     }
 }
 
 public extension UIImage {
     
-    public convenience init?(withColor color: UIColor?, size: CGSize = CGSize(width: 1, height: 1)) {
+    convenience init?(withColor color: UIColor?, size: CGSize = CGSize(width: 1, height: 1)) {
         guard let color = color, size.width > 0, size.height > 0 else {
             return nil
         }
@@ -44,7 +44,7 @@ public extension UIImage {
 
 public extension UIImage {
     
-    public func prettySquared() -> UIImage? {
+    func prettySquared() -> UIImage? {
         guard let cgImage = cgImage else {
             return nil
         }
@@ -81,7 +81,7 @@ public extension UIImage {
         return UIImage(cgImage: croppedCGImage, scale: scale, orientation: imageOrientation)
     }
     
-    public func prettyResized(to targetSize: CGSize, maintainAspectRatio: Bool = false) -> UIImage? {
+    func prettyResized(to targetSize: CGSize, maintainAspectRatio: Bool = false) -> UIImage? {
         guard targetSize.width > 0, targetSize.height > 0, size.width > 0, size.height > 0 else {
             return nil
         }
@@ -117,7 +117,7 @@ public extension UIImage {
 
 public extension UIImage {
 
-    public func prettyMaskWithColor(color: UIColor) -> UIImage? {
+    func prettyMaskWithColor(color: UIColor) -> UIImage? {
         guard let maskImage = cgImage else {
             return nil
         }

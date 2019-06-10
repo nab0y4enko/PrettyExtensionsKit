@@ -9,7 +9,7 @@
 import UIKit
 public extension UIView {
     
-    public var isHiddenAndInteractionDisabled: Bool {
+    var isHiddenAndInteractionDisabled: Bool {
         get {
             return isHidden && !isUserInteractionEnabled
         }

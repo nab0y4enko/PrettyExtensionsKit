@@ -11,7 +11,7 @@ import UIKit
 public extension UIControl {
     
     ///Remove all targets/actions for a set of events.
-    public func removeAllTargetsAndActions(controlEvents: UIControl.Event = .allEvents) {
+    func removeAllTargetsAndActions(controlEvents: UIControl.Event = .allEvents) {
         removeTarget(nil, action: nil, for: controlEvents)
     }
 }

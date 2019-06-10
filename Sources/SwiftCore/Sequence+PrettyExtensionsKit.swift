@@ -8,7 +8,7 @@
 
 public extension Sequence where Iterator.Element: Hashable {
     
-    public var uniqueElements: [Iterator.Element] {
+    var uniqueElements: [Iterator.Element] {
         let uniqueElements = Set(self)
         return Array(uniqueElements)
     }
@@ -16,7 +16,7 @@ public extension Sequence where Iterator.Element: Hashable {
 
 public extension Sequence where Iterator.Element: Equatable {
     
-    public var uniqueElements: [Iterator.Element] {
+    var uniqueElements: [Iterator.Element] {
         let uniqueElements = reduce([], { (result, element) -> [Iterator.Element] in
             if result.contains(element) {
                 return result

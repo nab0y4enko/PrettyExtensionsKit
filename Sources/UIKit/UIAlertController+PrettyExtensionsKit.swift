@@ -15,16 +15,16 @@ public extension UIAlertController {
     }
     
     // MARK: - Initializers
-    public convenience init(alertTitle title: String? = defaultAlertTitle, error: Error?) {
+    convenience init(alertTitle title: String? = defaultAlertTitle, error: Error?) {
         self.init(title: title, message: error?.localizedDescription, preferredStyle: .alert)
     }
 
-    public convenience init(alertTitle title: String? = defaultAlertTitle, message: String?) {
+    convenience init(alertTitle title: String? = defaultAlertTitle, message: String?) {
         self.init(title: title, message: message, preferredStyle: .alert)
     }
     
     // MARK: - Public Instance Methods
-    public func addAcceptAction(withTitle title: String = "OK") {
+    func addAcceptAction(withTitle title: String = "OK") {
         let acceptAction = UIAlertAction(
             title: title,
             style: .default

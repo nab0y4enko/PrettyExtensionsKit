@@ -11,14 +11,17 @@ import UIKit
 public extension UIColor {
     
     /// Generate random color
-    public static var random: UIColor {
-        return UIColor(red: .randomFractional(), green: .randomFractional(), blue: .randomFractional(), alpha: 1)
+    static var random: UIColor {
+        return UIColor(red: CGFloat.random(in: 0 ..< 1),
+                       green: CGFloat.random(in: 0 ..< 1),
+                       blue: CGFloat.random(in: 0 ..< 1),
+                       alpha: 1)
     }
 }
 
 public extension UIColor {
     
-    public convenience init?(hexString: String) {
+    convenience init?(hexString: String) {
         var hexString = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         
         if hexString.hasPrefix("#") {
@@ -51,7 +54,7 @@ public extension UIColor {
         }
     }
     
-    public func hexString(includeAlpha: Bool = false) -> String {
+    func hexString(includeAlpha: Bool = false) -> String {
         let components = prettyColorComponents
         
         if includeAlpha {
@@ -75,10 +78,10 @@ public extension UIColor {
 
 public extension UIColor {
 
-    public typealias PrettyColorComponents = (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+    typealias PrettyColorComponents = (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 
     /// rgba color components
-    public var prettyColorComponents: PrettyColorComponents {
+    var prettyColorComponents: PrettyColorComponents {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0

@@ -11,7 +11,7 @@ import QuartzCore
 public extension CATransition {
     
     // MARK: - Initializers
-    public convenience init(type: CATransitionType, subtype: CATransitionSubtype? = nil) {
+    convenience init(type: CATransitionType, subtype: CATransitionSubtype? = nil) {
         self.init()
         
         self.type = type

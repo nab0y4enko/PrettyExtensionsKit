@@ -10,7 +10,7 @@ import Foundation
 
 public extension UITextField {
     
-    @IBInspectable public var prettyPlaceholderColor: UIColor {
+    @IBInspectable var prettyPlaceholderColor: UIColor {
         get {
             if let attributedPlaceholder = attributedPlaceholder, attributedPlaceholder.length > 0 {
                 var range = NSRange(location: 0, length: attributedPlaceholder.length)

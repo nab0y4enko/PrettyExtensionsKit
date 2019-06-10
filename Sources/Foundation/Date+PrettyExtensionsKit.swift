@@ -10,13 +10,13 @@ import Foundation
 
 public extension Date {
     
-    public var dateFromCurrentTimeZone: Date {
+    var dateFromCurrentTimeZone: Date {
         let currentTimeZone = TimeZone.current
         let seconds = currentTimeZone.secondsFromGMT(for: self)
         return Date(timeInterval: TimeInterval(seconds), since: self)
     }
     
-    public var dateFromGlobalTimeZone: Date {
+    var dateFromGlobalTimeZone: Date {
         let currentTimeZone = TimeZone.current
         let seconds = -currentTimeZone.secondsFromGMT(for: self)
         return Date(timeInterval: TimeInterval(seconds), since: self)
