@@ -113,6 +113,43 @@ public extension UIImage {
         
         return newImage
     }
+    
+    func prettyRounded() -> UIImage? {
+        let minSide = min(size.width, size.height)
+        
+        guard minSide > 0 else {
+            return nil
+        }
+        
+        let newImageSize = CGSize(width: minSide, height: minSide)
+        
+        UIGraphicsBeginImageContextWithOptions(newImageSize, false, scale)
+        
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        
+        context.saveGState()
+        
+        let newImageBezierPath = UIBezierPath(
+            roundedRect: CGRect(origin: .zero, size: newImageSize),
+            cornerRadius: minSide / 2.0
+        )
+        
+        context.addPath(newImageBezierPath.cgPath)
+        context.clip()
+        
+        let newImageDrawRect = CGRect(x: (minSide - size.width) / 2.0, y: (minSide - size.height) / 2.0, width: size.width, height: size.height)
+        draw(in: newImageDrawRect)
+        
+        context.restoreGState()
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
 }
 
 public extension UIImage {

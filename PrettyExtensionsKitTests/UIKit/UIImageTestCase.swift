@@ -43,4 +43,13 @@ class UIImageTestCase: XCTestCase {
         XCTAssertNotNil(squaredImage)
         XCTAssertEqual(squaredImage!.size, CGSize(width: 200, height: 200))
     }
+    
+    func testRoundImage() {
+        let image = UIImage(withColor: UIColor.red, size: CGSize(width: 200, height: 400))
+        XCTAssertNotNil(image)
+        
+        let roundedImage = image?.prettyRounded()
+        XCTAssertNotNil(roundedImage)
+        XCTAssertEqual(roundedImage!.size, CGSize(width: 200, height: 200))
+    }
 }
