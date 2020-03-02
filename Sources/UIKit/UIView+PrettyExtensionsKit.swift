@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 public extension UIView {
     
     var isHiddenAndInteractionDisabled: Bool {

@@ -6,6 +6,8 @@
 //  Copyright © 2017 Oleksii Naboichenko. All rights reserved.
 //
 
+import UIKit
+
 public extension UIAlertController {
     
     // MARK: - Private Properties

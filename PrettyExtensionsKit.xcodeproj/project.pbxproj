@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B27D0971E07F4B1008EA305 /* PrettyExtensionsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B27D08B1E07F4B1008EA305 /* PrettyExtensionsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1B2AF61F1F8D4D57000919DB /* URL+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AF61E1F8D4D57000919DB /* URL+PrettyExtensionsKit.swift */; };
+		1B3600272409650D007DA86C /* PrettyExtensionsKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1B3600262409650D007DA86C /* PrettyExtensionsKit.podspec */; };
 		1B569B8C1E38D7AA00F14EDA /* PrettyExtensionsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1FC3271DFC830E0032B46F /* PrettyExtensionsKit.framework */; };
 		1B616F30219D82BD001F0279 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1B616F2F219D82BC001F0279 /* LICENSE */; };
 		1BB0BE061F76D6A8009C3C28 /* CATransition+PrettyExtensionsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0BDED1F76D6A8009C3C28 /* CATransition+PrettyExtensionsKit.swift */; };
@@ -48,6 +49,7 @@
 		1B27D0891E07F4B1008EA305 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B27D08B1E07F4B1008EA305 /* PrettyExtensionsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyExtensionsKit.h; sourceTree = "<group>"; };
 		1B2AF61E1F8D4D57000919DB /* URL+PrettyExtensionsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+PrettyExtensionsKit.swift"; sourceTree = "<group>"; };
+		1B3600262409650D007DA86C /* PrettyExtensionsKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrettyExtensionsKit.podspec; sourceTree = "<group>"; };
 		1B569B871E38D7AA00F14EDA /* PrettyExtensionsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrettyExtensionsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B569B8B1E38D7AA00F14EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B616F2F219D82BC001F0279 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		1B1FC31D1DFC830E0032B46F = {
 			isa = PBXGroup;
 			children = (
+				1B3600262409650D007DA86C /* PrettyExtensionsKit.podspec */,
 				1B616F2F219D82BC001F0279 /* LICENSE */,
 				1B27D0841E07F4B1008EA305 /* Sources */,
 				1B569B881E38D7AA00F14EDA /* PrettyExtensionsKitTests */,
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B616F30219D82BD001F0279 /* LICENSE in Resources */,
+				1B3600272409650D007DA86C /* PrettyExtensionsKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Oleksii Naboichenko. All rights reserved.
 //
 
+import UIKit
 import CoreGraphics
 
 public extension UITableView {
